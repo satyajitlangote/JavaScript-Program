@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title> Clouser</title>
+    </head>
+    <body>
+        <script>
+            var sample=function()
+            {
+                var x=0;
+                return
+                {
+                    incrementfunction()
+                    {
+                        x++;
+
+                    };
+                    decrementfunction()
+                    {
+                        x--;
+                    };
+                    getValue:function()
+                    {
+                        return x;
+                    };
+                };
+            };
+            var s=new sample();
+            console.log(s.getValue());
+            s.increment();
+            s.increment();
+            console.log(s.getValue());
+
+            s.decrement();
+            console.log(s.getValue);
+        </script>
+    </body>
+</html>
