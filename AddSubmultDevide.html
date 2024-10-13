@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Addition Substraction multiplication</title>
+        <style>
+            #txt3
+            {
+                background-color: rgb(106, 137, 179);
+            }
+            #button1,#button2,#button3,#button4
+            {
+                background-color: lightgrey;
+                border:19px ridge red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Addition Substraction multiplication</h1>
+        <from>
+            Enter value of A:-<input type="text" id="txt1"><br>
+            Enter value of B:-<input type="text" id="txt2"><br>
+            <input type="button" id="button1" value="Addition">
+            <input type="button" id="button2" value="Substraction">
+            <input type="button" id="button3" value="Multiplication">
+            <input type="button" id="button4" value="Divide"><br>
+            Result:-<input type="text" id="txt3" readonly="readonly">
+        </from>
+        <script>
+            document.getElementById("button1").addEventListener("click",fun1);
+            function fun1()
+            {
+                var a=parseInt(document.getElementById("txt1").value);
+                var b=parseInt(document.getElementById("txt2").value);
+                var c=a+b;
+                document.getElementById("txt3").value=c;
+            }
+            document.getElementById("button2").addEventListener("click",fun2);
+            function fun2()
+            {
+                var a=parseInt(document.getElementById("txt1").value);
+                var b=parseInt(document.getElementById("txt2").value);
+                var c=a-b;
+                document.getElementById("txt3").value=c;
+            }
+            document.getElementById("button3").addEventListener("click",fun3);
+            function fun3()
+            {
+                var a=parseInt(document.getElementById("txt1").value);
+                var b=parseInt(document.getElementById("txt2").value);
+                var c=a*b;
+                document.getElementById("txt3").value=c;
+            }
+            document.getElementById("button4").addEventListener("click",fun4);
+            function fun4()
+            {
+                var a=parseInt(document.getElementById("txt1").value);
+                var b=parseInt(document.getElementById("txt2").value);
+                var c=a/b;
+                document.getElementById("txt3").value=c;
+            }
+        </script>
+    </body>
+</html>
