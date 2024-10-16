@@ -1,0 +1,28 @@
+<Html>
+    <head>
+        <title>List of mouse over and mouse out   </title>
+        <style>
+            #div1
+            {
+                width: 300px;
+                height: 400px;
+                background-color: rgb(135, 13, 211);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">MouseOverMe</div>
+        <script>
+            document.getElementById("div1").addEventListener("mouseover",fun1);
+            function fun1()
+            {
+                document.getElementById("div1").innerHTML="thanx";
+            }
+            document.getElementById("div1").addEventListener("mouseout",fun2);
+            function fun2()
+            {
+                document.getElementById("div1").innerHTML="mouseoverme";
+            }
+        </script>
+    </body>
+</Html>
