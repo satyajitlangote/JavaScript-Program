@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>ListEvent double click</title>
+        <style>
+            #div1
+            {
+                background-color: rgb(138, 189, 209);
+                height: 300px;
+                width:300px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>List Event Double click</h1>
+        <div id="div1">Double Click</div>
+        <script>
+             document.getElementById("div1").addEventListener("dblclick",fun1);
+            function fun1()
+            {
+              document.getElementById("div1").innerHTML="Thanks"; 
+            }
+
+        </script>
+    </body>
+</html>
