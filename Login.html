@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Login in Java Script fom </title>
+    </head>
+    <body>
+        <h1>login From1</h1>
+        <form>
+            username:-<input type="text" id="txt1"><br>
+            password:-<input type="text" id="txt2"><br>
+            <input type="Submit" id="button1" value="login"><br>
+            <span d="sppan1"></span>
+        </form>
+        <script>
+            document.getElementById("button1").addEventListener("click",fun1);
+            function fun1(event)
+            {
+                event.preventDefault();
+                var username=document.getElementById("txt1").value;
+                var password=document.getElementById("txt2").value;
+                if(username == "admin" && password=="manage")
+            {
+                document.getElementById("span1").innerHTMl="sucesful login";
+            }
+            else{
+                document.getElementById("span1").innerHTML="Invalid login";
+            }
+            }
+        </script>
+    </body>
+</html>
