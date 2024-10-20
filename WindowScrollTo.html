@@ -1,0 +1,641 @@
+<html>
+    <head>
+        <title>Window ScrollTo</title>
+    </head>
+    <body>
+        <h1>Window Scroll To</h1>
+        <p>Inheritance:
+            ----------------
+            It is the process by which the objects of one class acquire the properties of objects of another class.
+            - Extending the parent class properties to child class is the concept of Inheritance.
+            -It provides the idea of reusability which means that we can additional features to an existing class without modifying it which is possible by deriving a new class from the existing one where the new class will have the combined features of both the classes.
+            
+            Dynamic binding:
+            ------------------------
+            means that the code associated with given procedure call is not known until the time of the call at runtime. It is associated with polymorphism and inheritance.
+            
+            Message Communication:
+            ------------------------------------
+             Objects communicate with each other by sending and receiving information as people.
+            It involves specifying the name of the object, method name and information to be sent.
+            
+            example:
+            employee.salary(ename);
+            
+            Depending on the above principles, they support, 
+            - object based programming language
+            - object oriented programming language
+            
+            Object based programming language supports
+            - data encapsulation
+            - data hiding & access mechanisms
+            - automatic initialization & clear up of objects
+            - operator overloading
+               ex:- Smalltalk
+            
+            - object oriented programming language
+             object base programming language + dynamic binding+inheritance
+               ex:- c++, java
+            
+            History of JAVA:
+            ----------------------
+            - JAVA is a general-purpose, object-oriented programming language developed by 
+              Sun Microsystems of USA in 1991.
+            - Originally called Oak by James Gosling.
+            - Java was invented for the development of software for consumer electronic devices like TVs, toasters 
+             Oak was renamed to java in 1995.
+            
+            What is Java?
+            -------------------
+            - Java is a programming language and a platform independent.
+            - Java is a high level, robust, secured and object-oriented programming language.
+            - Platform: Any hardware or software environment in which a program runs, is known as a platform.
+              Since Java has its own runtime environment (JRE) and API, it is called platform.
+            
+            JAVA features:
+            --------------------
+            - compiled and interpreted
+            - platform independent & portable
+            - object oriented
+            - robust & secure
+            - distributed
+            - familiar, simple & small
+            - multithreaded & interactive
+            - high performance
+            - dynamic & extensible
+            
+            Compiled & interpreted:
+            ---------------------------------
+            java combines both the features of compiler and interpreter. First, java compiler translates source code into byte code instructions which are not machine instructions at the second stage, java interpreter generates machine codes that can be directly executed by the machine that is running the java program.
+            
+            Platform independent & Portable:
+            -----------------------------------------------
+            - java programs can be easily moved from one system to other anywhere and anytime ie changes and upgrades   in operating systems, processors and system resources will not force any changes in java programs.
+            
+            Object oriented:
+            ----------------------
+            - Java is a true OOPL where all program code and data reside within objects & classes.
+            
+            Robust & Secure:
+            ------------------------
+            - Java is a robust language which provides many safeguards to ensure reliable code.
+            
+            Distributed:
+            ----------------
+            - It is a distributed language for creating applications on networks which has the ability to share both data & programs.
+            
+            Simple, Small & Familiar:
+            -----------------------------------
+            Java is a small and simple language. it does not use pointers, preprocessor header files, goto statement ,
+            operator overloading, multiple inheritance
+            
+            Multithreaded and Interactive:
+            ------------------------------------------
+            - Multithreaded means handling multiple tasks at same time which means that we need not wait for the application to finish one task before finishing other.
+            
+            High performance:
+            --------------------------
+            - incorporation of multithreading enhances the overall execution speed of java program.
+            
+            Dynamic & Extensible:
+            -------------------------------
+            it is a dynamic lang. which is capable of dynamically linking in new class libraries, methods and objects by using packages.
+            
+            Where it is used? (Java Applications)
+            --------------------------------------------------
+                - Desktop /Standalone Applications
+                 such as acrobat reader, 
+                media player, 
+                antivirus etc.
+                - Web Applications such 
+                as irctc.co.in, 
+                gmail.com, snapdeal.com, amazon.in
+                bookmyshow.com.......Etc
+                - Enterprise Applications 
+                such as banking applications
+                Insurance Application
+                - Mobile Applications
+                  Embedded Systems
+                  Smart Card
+                  Robotics
+                 Games etc.
+            
+            Types of Java Applications:
+            -------------------------------------
+            There are mainly 4 type of applications that can be created using java programming:
+            1) Standalone Application:
+            ------------------------------------- 
+            It is also known as desktop application or window-based application. An application that we need to install on every machine such as media player, antivirus, acrobat reader etc.
+             AWT and Swing are used in java for creating standalone applications.
+            
+            2) Web Application:
+            --------------------------- 
+            An application that runs on the server side and creates dynamic page, is called web application. Currently, servlet, jsp, struts, jsf etc. technologies are used for creating web applications in java.
+                ex:as irctc.co.in, gmail.com,snapdeal.com,amazon.in,bookmyshow.com
+            
+            3) Enterprise Application:
+            -----------------------------------
+            An application that is distributed in nature, such as banking applications, Insurance Application etc. It has the advantage of high level security, load balancing and clustering. 
+            In java, EJB is used for creating enterprise applications.
+                ex:Banking & Insurance Applications 
+            
+            4) Mobile Applications:
+            --------------------------------
+             An application that is created for mobile devices. Currently Android and Java ME are used for creating mobile applications.
+                ex:Embedded Systems
+                         Smart Card
+                         Robotics
+                         Games etc.
+            
+            JVM - Java Virtual Machine
+            -------------------------------------
+             - It is an abstract machine.
+             - It is a specification that provides runtime environment in which java byte code can be executed.
+            
+            - Java is a 2 stage system which supports both compiler & interpreter based. 
+            - At first stage, java compiler translates source code into intermediate code known as byte code(virtual code) for a machine that does not exist. This machine is called JVM and exists only inside computer memory. It is a simulated computer within the computer and does all major functions of real computer.
+            - At second stage, byte code is converted to machine code.
+            
+            process of compilation
+            -----java program code     ----------> java compiler-----------> virtual machine source code                   byte code process of converting byte code into machine code(interpretation)
+            --------------------------------------------------------------------------------------------
+            byte code-------> java interpreter------>machine code virtual machine real machine		          
+              The JVM performs following main tasks:
+              Inheritance:
+----------------
+It is the process by which the objects of one class acquire the properties of objects of another class.
+- Extending the parent class properties to child class is the concept of Inheritance.
+-It provides the idea of reusability which means that we can additional features to an existing class without modifying it which is possible by deriving a new class from the existing one where the new class will have the combined features of both the classes.
+
+Dynamic binding:
+------------------------
+means that the code associated with given procedure call is not known until the time of the call at runtime. It is associated with polymorphism and inheritance.
+
+Message Communication:
+------------------------------------
+ Objects communicate with each other by sending and receiving information as people.
+It involves specifying the name of the object, method name and information to be sent.
+
+example:
+employee.salary(ename);
+
+Depending on the above principles, they support, 
+- object based programming language
+- object oriented programming language
+
+Object based programming language supports
+- data encapsulation
+- data hiding & access mechanisms
+- automatic initialization & clear up of objects
+- operator overloading
+   ex:- Smalltalk
+
+- object oriented programming language
+ object base programming language + dynamic binding+inheritance
+   ex:- c++, java
+
+History of JAVA:
+----------------------
+- JAVA is a general-purpose, object-oriented programming language developed by 
+  Sun Microsystems of USA in 1991.
+- Originally called Oak by James Gosling.
+- Java was invented for the development of software for consumer electronic devices like TVs, toasters 
+ Oak was renamed to java in 1995.
+
+What is Java?
+-------------------
+- Java is a programming language and a platform independent.
+- Java is a high level, robust, secured and object-oriented programming language.
+- Platform: Any hardware or software environment in which a program runs, is known as a platform.
+  Since Java has its own runtime environment (JRE) and API, it is called platform.
+
+JAVA features:
+--------------------
+- compiled and interpreted
+- platform independent & portable
+- object oriented
+- robust & secure
+- distributed
+- familiar, simple & small
+- multithreaded & interactive
+- high performance
+- dynamic & extensible
+
+Compiled & interpreted:
+---------------------------------
+java combines both the features of compiler and interpreter. First, java compiler translates source code into byte code instructions which are not machine instructions at the second stage, java interpreter generates machine codes that can be directly executed by the machine that is running the java program.
+
+Platform independent & Portable:
+-----------------------------------------------
+- java programs can be easily moved from one system to other anywhere and anytime ie changes and upgrades   in operating systems, processors and system resources will not force any changes in java programs.
+
+Object oriented:
+----------------------
+- Java is a true OOPL where all program code and data reside within objects & classes.
+
+Robust & Secure:
+------------------------
+- Java is a robust language which provides many safeguards to ensure reliable code.
+
+Distributed:
+----------------
+- It is a distributed language for creating applications on networks which has the ability to share both data & programs.
+
+Simple, Small & Familiar:
+-----------------------------------
+Java is a small and simple language. it does not use pointers, preprocessor header files, goto statement ,
+operator overloading, multiple inheritance
+
+Multithreaded and Interactive:
+------------------------------------------
+- Multithreaded means handling multiple tasks at same time which means that we need not wait for the application to finish one task before finishing other.
+
+High performance:
+--------------------------
+- incorporation of multithreading enhances the overall execution speed of java program.
+
+Dynamic & Extensible:
+-------------------------------
+it is a dynamic lang. which is capable of dynamically linking in new class libraries, methods and objects by using packages.
+
+Where it is used? (Java Applications)
+--------------------------------------------------
+    - Desktop /Standalone Applications
+	 such as acrobat reader, 
+	media player, 
+	antivirus etc.
+    - Web Applications such 
+	as irctc.co.in, 
+	gmail.com, snapdeal.com, amazon.in
+	bookmyshow.com.......Etc
+    - Enterprise Applications 
+	such as banking applications
+	Insurance Application
+    - Mobile Applications
+      Embedded Systems
+      Smart Card
+      Robotics
+     Games etc.
+
+Types of Java Applications:
+-------------------------------------
+There are mainly 4 type of applications that can be created using java programming:
+1) Standalone Application:
+------------------------------------- 
+It is also known as desktop application or window-based application. An application that we need to install on every machine such as media player, antivirus, acrobat reader etc.
+ AWT and Swing are used in java for creating standalone applications.
+
+2) Web Application:
+--------------------------- 
+An application that runs on the server side and creates dynamic page, is called web application. Currently, servlet, jsp, struts, jsf etc. technologies are used for creating web applications in java.
+	ex:as irctc.co.in, gmail.com,snapdeal.com,amazon.in,bookmyshow.com
+
+3) Enterprise Application:
+-----------------------------------
+An application that is distributed in nature, such as banking applications, Insurance Application etc. It has the advantage of high level security, load balancing and clustering. 
+In java, EJB is used for creating enterprise applications.
+	ex:Banking & Insurance Applications 
+
+4) Mobile Applications:
+--------------------------------
+ An application that is created for mobile devices. Currently Android and Java ME are used for creating mobile applications.
+	ex:Embedded Systems
+    	     Smart Card
+    	     Robotics
+    	     Games etc.
+
+JVM - Java Virtual Machine
+-------------------------------------
+ - It is an abstract machine.
+ - It is a specification that provides runtime environment in which java byte code can be executed.
+
+- Java is a 2 stage system which supports both compiler & interpreter based. 
+- At first stage, java compiler translates source code into intermediate code known as byte code(virtual code) for a machine that does not exist. This machine is called JVM and exists only inside computer memory. It is a simulated computer within the computer and does all major functions of real computer.
+- At second stage, byte code is converted to machine code.
+
+process of compilation
+-----java program code     ----------> java compiler-----------> virtual machine source code                   byte code process of converting byte code into machine code(interpretation)
+--------------------------------------------------------------------------------------------
+byte code-------> java interpreter------>machine code virtual machine real machine		          
+  The JVM performs following main tasks:
+  Inheritance:
+  ----------------
+  It is the process by which the objects of one class acquire the properties of objects of another class.
+  - Extending the parent class properties to child class is the concept of Inheritance.
+  -It provides the idea of reusability which means that we can additional features to an existing class without modifying it which is possible by deriving a new class from the existing one where the new class will have the combined features of both the classes.
+  
+  Dynamic binding:
+  ------------------------
+  means that the code associated with given procedure call is not known until the time of the call at runtime. It is associated with polymorphism and inheritance.
+  
+  Message Communication:
+  ------------------------------------
+   Objects communicate with each other by sending and receiving information as people.
+  It involves specifying the name of the object, method name and information to be sent.
+  
+  example:
+  employee.salary(ename);
+  
+  Depending on the above principles, they support, 
+  - object based programming language
+  - object oriented programming language
+  
+  Object based programming language supports
+  - data encapsulation
+  - data hiding & access mechanisms
+  - automatic initialization & clear up of objects
+  - operator overloading
+     ex:- Smalltalk
+  
+  - object oriented programming language
+   object base programming language + dynamic binding+inheritance
+     ex:- c++, java
+  
+  History of JAVA:
+  ----------------------
+  - JAVA is a general-purpose, object-oriented programming language developed by 
+    Sun Microsystems of USA in 1991.
+  - Originally called Oak by James Gosling.
+  - Java was invented for the development of software for consumer electronic devices like TVs, toasters 
+   Oak was renamed to java in 1995.
+  
+  What is Java?
+  -------------------
+  - Java is a programming language and a platform independent.
+  - Java is a high level, robust, secured and object-oriented programming language.
+  - Platform: Any hardware or software environment in which a program runs, is known as a platform.
+    Since Java has its own runtime environment (JRE) and API, it is called platform.
+  
+  JAVA features:
+  --------------------
+  - compiled and interpreted
+  - platform independent & portable
+  - object oriented
+  - robust & secure
+  - distributed
+  - familiar, simple & small
+  - multithreaded & interactive
+  - high performance
+  - dynamic & extensible
+  
+  Compiled & interpreted:
+  ---------------------------------
+  java combines both the features of compiler and interpreter. First, java compiler translates source code into byte code instructions which are not machine instructions at the second stage, java interpreter generates machine codes that can be directly executed by the machine that is running the java program.
+  
+  Platform independent & Portable:
+  -----------------------------------------------
+  - java programs can be easily moved from one system to other anywhere and anytime ie changes and upgrades   in operating systems, processors and system resources will not force any changes in java programs.
+  
+  Object oriented:
+  ----------------------
+  - Java is a true OOPL where all program code and data reside within objects & classes.
+  
+  Robust & Secure:
+  ------------------------
+  - Java is a robust language which provides many safeguards to ensure reliable code.
+  
+  Distributed:
+  ----------------
+  - It is a distributed language for creating applications on networks which has the ability to share both data & programs.
+  
+  Simple, Small & Familiar:
+  -----------------------------------
+  Java is a small and simple language. it does not use pointers, preprocessor header files, goto statement ,
+  operator overloading, multiple inheritance
+  
+  Multithreaded and Interactive:
+  ------------------------------------------
+  - Multithreaded means handling multiple tasks at same time which means that we need not wait for the application to finish one task before finishing other.
+  
+  High performance:
+  --------------------------
+  - incorporation of multithreading enhances the overall execution speed of java program.
+  
+  Dynamic & Extensible:
+  -------------------------------
+  it is a dynamic lang. which is capable of dynamically linking in new class libraries, methods and objects by using packages.
+  
+  Where it is used? (Java Applications)
+  --------------------------------------------------
+      - Desktop /Standalone Applications
+       such as acrobat reader, 
+      media player, 
+      antivirus etc.
+      - Web Applications such 
+      as irctc.co.in, 
+      gmail.com, snapdeal.com, amazon.in
+      bookmyshow.com.......Etc
+      - Enterprise Applications 
+      such as banking applications
+      Insurance Application
+      - Mobile Applications
+        Embedded Systems
+        Smart Card
+        Robotics
+       Games etc.
+  
+  Types of Java Applications:
+  -------------------------------------
+  There are mainly 4 type of applications that can be created using java programming:
+  1) Standalone Application:
+  ------------------------------------- 
+  It is also known as desktop application or window-based application. An application that we need to install on every machine such as media player, antivirus, acrobat reader etc.
+   AWT and Swing are used in java for creating standalone applications.
+  
+  2) Web Application:
+  --------------------------- 
+  An application that runs on the server side and creates dynamic page, is called web application. Currently, servlet, jsp, struts, jsf etc. technologies are used for creating web applications in java.
+      ex:as irctc.co.in, gmail.com,snapdeal.com,amazon.in,bookmyshow.com
+  
+  3) Enterprise Application:
+  -----------------------------------
+  An application that is distributed in nature, such as banking applications, Insurance Application etc. It has the advantage of high level security, load balancing and clustering. 
+  In java, EJB is used for creating enterprise applications.
+      ex:Banking & Insurance Applications 
+  
+  4) Mobile Applications:
+  --------------------------------
+   An application that is created for mobile devices. Currently Android and Java ME are used for creating mobile applications.
+      ex:Embedded Systems
+               Smart Card
+               Robotics
+               Games etc.
+  
+  JVM - Java Virtual Machine
+  -------------------------------------
+   - It is an abstract machine.
+   - It is a specification that provides runtime environment in which java byte code can be executed.
+  
+  - Java is a 2 stage system which supports both compiler & interpreter based. 
+  - At first stage, java compiler translates source code into intermediate code known as byte code(virtual code) for a machine that does not exist. This machine is called JVM and exists only inside computer memory. It is a simulated computer within the computer and does all major functions of real computer.
+  - At second stage, byte code is converted to machine code.
+  
+  process of compilation
+  -----java program code     ----------> java compiler-----------> virtual machine source code                   byte code process of converting byte code into machine code(interpretation)
+  --------------------------------------------------------------------------------------------
+  byte code-------> java interpreter------>machine code virtual machine real machine		          
+    The JVM performs following main tasks:
+    Inheritance:
+    ----------------
+    It is the process by which the objects of one class acquire the properties of objects of another class.
+    - Extending the parent class properties to child class is the concept of Inheritance.
+    -It provides the idea of reusability which means that we can additional features to an existing class without modifying it which is possible by deriving a new class from the existing one where the new class will have the combined features of both the classes.
+    
+    Dynamic binding:
+    ------------------------
+    means that the code associated with given procedure call is not known until the time of the call at runtime. It is associated with polymorphism and inheritance.
+    
+    Message Communication:
+    ------------------------------------
+     Objects communicate with each other by sending and receiving information as people.
+    It involves specifying the name of the object, method name and information to be sent.
+    
+    example:
+    employee.salary(ename);
+    
+    Depending on the above principles, they support, 
+    - object based programming language
+    - object oriented programming language
+    
+    Object based programming language supports
+    - data encapsulation
+    - data hiding & access mechanisms
+    - automatic initialization & clear up of objects
+    - operator overloading
+       ex:- Smalltalk
+    
+    - object oriented programming language
+     object base programming language + dynamic binding+inheritance
+       ex:- c++, java
+    
+    History of JAVA:
+    ----------------------
+    - JAVA is a general-purpose, object-oriented programming language developed by 
+      Sun Microsystems of USA in 1991.
+    - Originally called Oak by James Gosling.
+    - Java was invented for the development of software for consumer electronic devices like TVs, toasters 
+     Oak was renamed to java in 1995.
+    
+    What is Java?
+    -------------------
+    - Java is a programming language and a platform independent.
+    - Java is a high level, robust, secured and object-oriented programming language.
+    - Platform: Any hardware or software environment in which a program runs, is known as a platform.
+      Since Java has its own runtime environment (JRE) and API, it is called platform.
+    
+    JAVA features:
+    --------------------
+    - compiled and interpreted
+    - platform independent & portable
+    - object oriented
+    - robust & secure
+    - distributed
+    - familiar, simple & small
+    - multithreaded & interactive
+    - high performance
+    - dynamic & extensible
+    
+    Compiled & interpreted:
+    ---------------------------------
+    java combines both the features of compiler and interpreter. First, java compiler translates source code into byte code instructions which are not machine instructions at the second stage, java interpreter generates machine codes that can be directly executed by the machine that is running the java program.
+    
+    Platform independent & Portable:
+    -----------------------------------------------
+    - java programs can be easily moved from one system to other anywhere and anytime ie changes and upgrades   in operating systems, processors and system resources will not force any changes in java programs.
+    
+    Object oriented:
+    ----------------------
+    - Java is a true OOPL where all program code and data reside within objects & classes.
+    
+    Robust & Secure:
+    ------------------------
+    - Java is a robust language which provides many safeguards to ensure reliable code.
+    
+    Distributed:
+    ----------------
+    - It is a distributed language for creating applications on networks which has the ability to share both data & programs.
+    
+    Simple, Small & Familiar:
+    -----------------------------------
+    Java is a small and simple language. it does not use pointers, preprocessor header files, goto statement ,
+    operator overloading, multiple inheritance
+    
+    Multithreaded and Interactive:
+    ------------------------------------------
+    - Multithreaded means handling multiple tasks at same time which means that we need not wait for the application to finish one task before finishing other.
+    
+    High performance:
+    --------------------------
+    - incorporation of multithreading enhances the overall execution speed of java program.
+    
+    Dynamic & Extensible:
+    -------------------------------
+    it is a dynamic lang. which is capable of dynamically linking in new class libraries, methods and objects by using packages.
+    
+    Where it is used? (Java Applications)
+    --------------------------------------------------
+        - Desktop /Standalone Applications
+         such as acrobat reader, 
+        media player, 
+        antivirus etc.
+        - Web Applications such 
+        as irctc.co.in, 
+        gmail.com, snapdeal.com, amazon.in
+        bookmyshow.com.......Etc
+        - Enterprise Applications 
+        such as banking applications
+        Insurance Application
+        - Mobile Applications
+          Embedded Systems
+          Smart Card
+          Robotics
+         Games etc.
+    
+    Types of Java Applications:
+    -------------------------------------
+    There are mainly 4 type of applications that can be created using java programming:
+    1) Standalone Application:
+    ------------------------------------- 
+    It is also known as desktop application or window-based application. An application that we need to install on every machine such as media player, antivirus, acrobat reader etc.
+     AWT and Swing are used in java for creating standalone applications.
+    
+    2) Web Application:
+    --------------------------- 
+    An application that runs on the server side and creates dynamic page, is called web application. Currently, servlet, jsp, struts, jsf etc. technologies are used for creating web applications in java.
+        ex:as irctc.co.in, gmail.com,snapdeal.com,amazon.in,bookmyshow.com
+    
+    3) Enterprise Application:
+    -----------------------------------
+    An application that is distributed in nature, such as banking applications, Insurance Application etc. It has the advantage of high level security, load balancing and clustering. 
+    In java, EJB is used for creating enterprise applications.
+        ex:Banking & Insurance Applications 
+    
+    4) Mobile Applications:
+    --------------------------------
+     An application that is created for mobile devices. Currently Android and Java ME are used for creating mobile applications.
+        ex:Embedded Systems
+                 Smart Card
+                 Robotics
+                 Games etc.
+    
+    JVM - Java Virtual Machine
+    -------------------------------------
+     - It is an abstract machine.
+     - It is a specification that provides runtime environment in which java byte code can be executed.
+    
+    - Java is a 2 stage system which supports both compiler & interpreter based. 
+    - At first stage, java compiler translates source code into intermediate code known as byte code(virtual code) for a machine that does not exist. This machine is called JVM and exists only inside computer memory. It is a simulated computer within the computer and does all major functions of real computer.
+    - At second stage, byte code is converted to machine code.
+    
+    process of compilation
+    -----java program code     ----------> java compiler-----------> virtual machine source code                   byte code process of converting byte code into machine code(interpretation)
+    --------------------------------------------------------------------------------------------
+    byte code-------> java interpreter------>machine code virtual machine real machine		          
+      The JVM performs following main tasks:
+      
+            </p>
+        <script>
+            window.scrollTo(0,500);
+        </script>
+    </body>
+</html>
